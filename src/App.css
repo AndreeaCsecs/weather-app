@@ -1,0 +1,209 @@
+.container {
+  background-color: radial-gradient(
+    100% 100% at 0% 0%,
+    rgba(181, 47, 47, 0.4) 0%,
+    rgba(54, 103, 30, 0) 100%
+  );
+}
+
+#colored-card {
+  background: linear-gradient(248.66deg, #8c6bae 0%, #ff9696 100%);
+  border-radius: 20px;
+}
+
+/* ---------------------- NAV ---------------------- */
+
+.title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 70px;
+  background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ---------------------- CITY ---------------------- */
+
+.ForC {
+  width: 90px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 100px;
+}
+
+.ForC-font {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.light {
+  width: 53px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 100px;
+}
+
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.tempreture {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 100px;
+  color: #ffffff;
+  filter: drop-shadow(-4.51px 2.26px 0.75px rgba(0, 0, 0, 0.15));
+}
+
+small {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+}
+
+.cityname {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 50px;
+  line-height: 120%;
+  color: #ffffff;
+  filter: drop-shadow(-4.51px 2.26px 0.75px rgba(0, 0, 0, 0.15));
+}
+
+#details {
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  color: #ffffff;
+  text-shadow: -1.39839px 2.09758px 0.699193px rgba(0, 0, 0, 0.1);
+}
+
+.details-icons {
+  width: 20px;
+  height: 20px;
+  filter: drop-shadow(-1.50827px 2.26241px 0.754137px rgba(0, 0, 0, 0.1));
+}
+
+.card-carousel {
+  width: 85px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.2);
+  filter: blur(0.569258px);
+  border-radius: 11.3852px;
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: -1.13852px 1.70778px 0.569258px rgba(0, 0, 0, 0.1);
+}
+
+.react-multi-carousel-list {
+  position: unset !important;
+}
+
+/* ---------------------- SEARCH ---------------------- */
+
+#search-col {
+  background: radial-gradient(
+    100% 100% at 0% 0%,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.place {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 120%;
+  color: #ffffff;
+  text-shadow: -1.51px 2.26px 0.75px rgba(0, 0, 0, 0.1);
+}
+
+.oval {
+  width: 120px;
+  height: 235px;
+  background: rgba(255, 255, 255, 0.26);
+  border-radius: 100px;
+}
+
+.time {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: right;
+  color: #ffffff;
+}
+
+.oval-hour {
+  width: 100px;
+  height: 39px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 35px;
+  text-align: right;
+  color: #ffffff;
+}
+
+.today-date {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 120%;
+  color: #ffffff;
+  text-shadow: -1.51px 2.26px 0.75px rgba(0, 0, 0, 0.1);
+}
+
+.weekday-hour {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 120%;
+  color: #ffffff;
+  text-shadow: -1.51px 2.26px 0.75px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------------- FOOTER ---------------------- */
+
+.Footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-decoration-line: underline;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+a {
+  color: #000000;
+}
