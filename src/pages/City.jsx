@@ -22,17 +22,17 @@ const City = ({ lat, long, cityName }) => {
   const getWeatherData = async () => {
     let url = "";
     if (!cityName) {
-      url = `http://api.weatherapi.com/v1/current.json?key=${clientKey}&q=${
+      url = `https://api.weatherapi.com/v1/current.json?key=${clientKey}&q=${
         lat + "," + long
       }?end_dt=2023-03-30`;
     } else {
-      url = `http://api.weatherapi.com/v1/current.json?key=${clientKey}&q=${cityName}`;
+      url = `https://api.weatherapi.com/v1/current.json?key=${clientKey}&q=${cityName}`;
     }
     const response = await fetch(url);
     let data = await response.json();
 
     setCelsiusTemp(data.current.temp_c);
-    setFahrenheitTemp(data.current.temp_f);
+    setFahrenheitTemp(((data.current.temp_c * 9) / 5 + 32).toFixed(1));
     setIcon(data.current.condition.icon);
     setWind(data.current.wind_kph);
     setUv(data.current.uv);
@@ -41,11 +41,11 @@ const City = ({ lat, long, cityName }) => {
   const getFutureData = async () => {
     let url = "";
     if (!cityName) {
-      url = `http://api.weatherapi.com/v1/forecast.json?key=${clientKey}&days=8&aqi=no&alerts=no&q=${
+      url = `https://api.weatherapi.com/v1/forecast.json?key=${clientKey}&days=8&aqi=no&alerts=no&q=${
         lat + "," + long
       }?end_dt=2023-03-30`;
     } else {
-      url = `http://api.weatherapi.com/v1/forecast.json?key=${clientKey}&days=8&aqi=no&alerts=no&q=${cityName}`;
+      url = `https://api.weatherapi.com/v1/forecast.json?key=${clientKey}&days=8&aqi=no&alerts=no&q=${cityName}`;
     }
     const response = await fetch(url);
     let data = await response.json();
@@ -84,21 +84,20 @@ const City = ({ lat, long, cityName }) => {
         <div className="col">
           <img src={icon} alt="" style={{ width: "100px", height: "100px" }} />
         </div>
-
         <div className="ForC">
           <button
             type="button"
             className={isCelsius ? "btn light" : "btn"}
-            onClick={() => setIsCelsius(true)}
+            onClick={() => setIsCelsius(false)}
           >
-            <span className="ForC-font"> F</span>
+            <span className="ForC-font"> C</span>
           </button>
           <button
             type="button"
             className={isCelsius ? "btn" : "btn light"}
-            onClick={() => setIsCelsius(false)}
+            onClick={() => setIsCelsius(true)}
           >
-            <span className="ForC-font"> C</span>
+            <span className="ForC-font"> F</span>
           </button>
         </div>
       </div>
@@ -107,16 +106,16 @@ const City = ({ lat, long, cityName }) => {
         <div className="col tempreture">
           {isCelsius === true ? (
             <div className="d-flex">
-              <span>{fahrenheitTemp}</span>
+              <span>{isCelsius ? celsiusTemp : fahrenheitTemp}</span>
               <b className="align-self-start" style={{ fontSize: "30px" }}>
-                &#176; F
+                &#176; C
               </b>
             </div>
           ) : (
             <div className="d-flex">
-              <span>{celsiusTemp}</span>
+              <span>{fahrenheitTemp}</span>
               <b className="align-self-start" style={{ fontSize: "30px" }}>
-                &#176; C
+                &#176; F
               </b>
             </div>
           )}

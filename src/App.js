@@ -10,7 +10,8 @@ import Nav from "./components/Nav";
 
 function App() {
   const { latitude, longitude, error } = usePosition();
-  const [cityName, setCityName] = useState("");
+  const [cityName, setCityName] = useState("Bucharest");
+
   return (
     <div className="container">
       <Nav />

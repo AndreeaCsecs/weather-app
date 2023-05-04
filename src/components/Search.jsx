@@ -36,7 +36,7 @@ const month = [
 ][now.getMonth()];
 
 const Search = ({ setCityName }) => {
-  const [place, setPlace] = useState("");
+  const [place, setPlace] = useState("Bucharest, Romania");
 
   const [items, setItems] = useState([]);
   const handleSelect = (item) => {
@@ -45,7 +45,7 @@ const Search = ({ setCityName }) => {
   };
 
   const handleOnSearch = async (search) => {
-    let url = `http://api.weatherapi.com/v1/search.json?key=${clientKey}&q=${search}`;
+    let url = `https://api.weatherapi.com/v1/search.json?key=${clientKey}&q=${search}`;
 
     const response = await fetch(url);
     let data = await response.json();

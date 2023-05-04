@@ -120,6 +120,10 @@ small {
   position: unset !important;
 }
 
+.react-multiple-carousel__arrow {
+  background-color: transparent !important;
+}
+
 /* ---------------------- SEARCH ---------------------- */
 
 #search-col {
@@ -128,6 +132,17 @@ small {
     rgba(255, 255, 255, 0.4) 0%,
     rgba(255, 255, 255, 0) 100%
   );
+}
+
+.wrapper {
+  background: linear-gradient(
+    116.79deg,
+    rgba(255, 255, 255, 0.48) -41.94%,
+    rgba(255, 255, 255, 0.12) 57.51%
+  ) !important;
+  backdrop-filter: blur(50px) !important;
+  border-radius: 20px !important;
+  border: none !important;
 }
 
 .place {
