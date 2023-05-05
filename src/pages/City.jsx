@@ -88,14 +88,14 @@ const City = ({ lat, long, cityName }) => {
           <button
             type="button"
             className={isCelsius ? "btn light" : "btn"}
-            onClick={() => setIsCelsius(false)}
+            onClick={() => setIsCelsius(true)}
           >
             <span className="ForC-font"> C</span>
           </button>
           <button
             type="button"
             className={isCelsius ? "btn" : "btn light"}
-            onClick={() => setIsCelsius(true)}
+            onClick={() => setIsCelsius(false)}
           >
             <span className="ForC-font"> F</span>
           </button>
