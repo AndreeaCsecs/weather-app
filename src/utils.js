@@ -1,3 +1,3 @@
-const clientKey = "974f39448ac8499685f162453230405";
+const clientKey = "58d2bb0f979a4c81a9e120821231905";
 
 export { clientKey };
