@@ -1,5 +1,7 @@
 # Reactive Weather
 
+People Always Talk About The Weather... They are always checking the weather in native and web applications.
+
 ## Story
 
 A simple weather app built using React would allow users to input a location and receive current weather data for that location, including temperature, humidity, and wind speed. The app uses HTTPS Requests to fetch data from api.weatherapi.com and integrates with third-party libraries like React-Bootstrap, to provide a clean and user-friendly interface.
@@ -8,7 +10,6 @@ A simple weather app built using React would allow users to input a location and
 
 HTML , CSS, JavaScript, React, Bootstrap, HTTPS Requests
 
-People Always Talk About The Weather... They are always checking the weather in native and web applications.
 
 ## Hints
 
