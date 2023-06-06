@@ -26,7 +26,3 @@ Tech stack : HTML , CSS, JavaScript, React, Bootstrap, HTTPS Requests
 - <i class="far fa-book-open"></i> [React Use Effect](https://reactjs.org/docs/hooks-effect.html)
 - <i class="far fa-book-open"></i> [Functional Components](https://www.robinwieruch.de/react-function-component#react-stateless-function-component)
 - <i class="far fa-book-open"></i> [React Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html)
-# weather-app
-# weather-app
-# weather-app
-# weather-app
