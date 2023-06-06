@@ -1,10 +1,9 @@
-# Reactive Weather
+# Crypto app
 
-People Always Talk About The Weather... They are always checking the weather in native and web applications.
 
 ## Story
 
-A simple weather app built using React would allow users to input a location and receive current weather data for that location, including temperature, humidity, and wind speed. The app uses HTTPS Requests to fetch data from api.weatherapi.com and integrates with third-party libraries like React-Bootstrap, to provide a clean and user-friendly interface.
+A simple crypto app built using React and Bootstrap that displays the latest prices and daily changes of various cryptocurrencies along with their market cap. The app uses HTTP requests to fetch data from APIs such as Binance API to retrieve real-time data and provide a user-friendly interface.
 
 ## Tech stack 
 
